@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.poem {
+    border:1px solid black;
+    width:600px 
+}
+
+h1{
+    color:greenyellow
+}
+
+.Jack {
+    color:blue;
+}
+
+.Bryan {
+    color: red;
+}
