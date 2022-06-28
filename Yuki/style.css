@@ -1,0 +1,130 @@
+body{
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+    font-family: sans-serif;
+    text-align:center;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.top{
+    display:grid;
+    grid-template-columns:1fr;
+    width: 1000px;
+    border:1px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+    /* flex-direction: row;
+    justify-content: space-evenly; */
+}
+
+.top_list{
+    border: 1px solid lightgreen;
+    padding: 10px;
+}
+
+h1,h2{
+    position: relative;
+    left:30px;
+    color:red;
+    animation-name: h1;
+    animation-duration: 2s;
+}
+
+.we{
+    animation-name: h1;
+    animation-duration: 2s;
+    animation:h1 infinite 3s
+}
+
+.do{
+    animation-name: do;
+    animation-duration: 2s;
+    animation:do infinite 3s
+}
+
+
+.talk{
+    animation-name: talk;
+    animation-duration: 3s;
+    animation:talk infinite 4s
+}
+
+.about{
+    animation-name: about;
+    animation-duration: 3.5s;
+    animation:about infinite 5s
+}
+
+.yuki{
+    animation-name: yuki;
+    animation-duration: 3.3s;
+    animation:yuki infinite 5s
+}
+
+.She_is_dead::before{
+    animation: No;
+    animation-duration: 100s;
+    content: "Well.... Hi there visitor....ig? anyway,congrats for staying here... maybe?.... *sigh* ig you want to know who is yuki. Well..... Yuki is an old to us and she is Named mariam, She is the M in SEM as if you noticed,SEM has already a meaning. S for Salah. E for Eyad. M for Mariam. She is the same age of us but sadly she left us due to a problem that I made. She was a great person but sadly I lost her. I'm sad that I lost her more than anyone because she was from the impossible to find people who could treat me and make me fine. She even made some poems but I can't show them without her approval so.... Sorry visitor..... Can you enter bryan and find the contact of me and send me a msg telling me ( I found project: Deleted person )  ";
+}
+
+.She_is_dead{
+    margin-right: 60px;
+}
+
+/* .yuki::before{
+    position: relative;
+    left:50px;
+    top:200px;  
+    content: "WE";
+    animation: Yuki infinite 3.5s;
+    padding-left: 10px;
+} */
+
+@keyframes h1{
+    0% {opacity:0;}
+    100% {opacity:100;}
+}
+
+@keyframes do{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+@keyframes talk{
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+@keyframes about{
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+@keyframes yuki{
+    0% {opacity: 0;}
+    17% {opacity: 0;}
+    34% {opacity: 0;}
+    51% {opacity: 0;}
+    68% {opacity: 0;}
+    85% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+@keyframes No{
+    0% {opacity: 0%;}
+    99% {opacity: 0%;}
+    100% {opacity: 100%;}
+}

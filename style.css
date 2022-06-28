@@ -1,23 +1,186 @@
 body{
+    background-image:url(Photos/wallpaperflare.com_wallpaper_5.jpg);
     background-color: white;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:cover;
+    color:white;
+    font-family: sans-serif;
+    text-align:center;
+    overflow-x: hidden;
 }
 
-.poem {
+.base{
+    font-size: 23px;
+}
+
+/* .page{
+    display:grid;
+    grid-template-columns: 50px 50px 400px;
+    grid-template-rows: 100px minmax(1000px,auto) 100px;
+
+} */
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited{
+    color:red;
+}
+
+a:link{
+    color:red;
+}
+
+a:hover{
+    color:blue;
+    animation-name: links;
+    animation-duration: 0.5s;
+}
+
+.top{
+    display:grid;
+    grid-template-columns: 150px 150px 150px 150px 1fr;
+    width: 1000px;
+    border:1px solid lightgreen;
+    margin-left: auto;
+    margin-right: auto;
+    /* flex-direction: row;
+    justify-content: space-evenly; */
+}
+
+.sidebar{
+    float: left;
+    display: grid;
+    width:120px;
+    grid-template-rows: 50px minmax(auto,auto);
+    border: 1px solid black;
+}
+
+.top_list{
+    border: 1px solid lightgreen;
+    padding: 10px;
+}
+
+.exist{
+    background-color: #666;
+}
+
+.img{
+    position: ce;
+}
+
+.poem,.thx{
     border:1px solid black;
-    width:600px 
+    width:600px;
+    animation-name: poem;
+    animation-duration: 3s;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h1{
-    color:greenyellow
+.description{
+    border:1px solid black;
+    width:900px;
+    animation-name: poem;
+    animation-duration: 3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text{
+    font-size:120%;
+    color:aqua;
+}
+
+h1,h2,h4{
+    position: relative;
+    left:-60px;
+    color:greenyellow;
+    animation-name: h1;
+    animation-duration: 2s;
 }
 
 .Jack {
-    color:blue;
+    color:#7878f0
 }
 
-.Bryan {
+.Bryan,.Bot_text {
     color: red;
+}
+
+/* .p_o_c{
+    width:700px;
+    display:grid;
+    grid-template-columns: 300px 600px;
+    grid-template-rows: 200px minmax(300,1fr);
+    grid-template-areas: 
+    "top top"
+    "short long";
+    border:1px solid red;
+    text-align: center;
+}
+
+.main_p_o_c{
+    grid-area: top;
+    text-align:center;
+}
+
+p{
+    grid-area: long;
+    border:1px solid red;
+} */
+
+.main_p_o_c {
+    position: relative;
+    left: 10px;
+}
+
+table, th, td {
+    border:1px solid royalblue;
+    text-align:center;
+    animation-name: table;
+    animation-duration: 3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,td{
+    padding:10px
+}
+
+.long{
+    width:600px
+}
+
+.contact{
+    width: 20px;
+}
+
+.version::before{
+    content: "v0.1";
+    float:left;
+}
+
+@keyframes h1{
+    0% {opacity:0;}
+    100% {opacity:100;}
+}
+
+@keyframes poem{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+@keyframes table{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+@keyframes links{
+    0% {color:red;}
+    100%{color:blue;}
 }
