@@ -93,8 +93,10 @@ li{
     border: 1px solid black;
 }
 
-.exist{
+.top li:hover{
     background-color: #666;
+    border-radius: 20px;
+
 }
 
 .poem,.thx{
